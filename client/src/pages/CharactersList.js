@@ -5,11 +5,25 @@ import { useQuery } from "@apollo/client";
 import { GET_CHARACTERS } from "../utils/queries";
 
 const CharactersList = () => {
-  // specify query we want to execute
+  // specify query we want to execute - is this true or not
   const { data, loading, error } = useQuery(GET_CHARACTERS);
-  console.log(data);
+  //   if loading return spinner
+  if (loading) return <div>spinner...</div>;
+  if (error) return <div>Oops! my bad!</div>;
+  console.log({ data, error, loading });
 
-  return <div>CharactersList</div>;
+  return (
+    <div className="characterList">
+      {data.characters.results.map((character) => {
+        return (
+          <div>
+            <img src={character.image} />
+            <h2>{character.name}</h2>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default CharactersList;
