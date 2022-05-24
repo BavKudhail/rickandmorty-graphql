@@ -1,0 +1,9 @@
+.characterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.characterContainer {
+  margin: 1rem;
+}
