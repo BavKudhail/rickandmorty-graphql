@@ -6,10 +6,10 @@ I decided to create a very simple Rick and Morty character list to understand ho
 
 ## Technologies used
 
-*Apollo Client
-*React
-*GraphQl
-*TailwindCSS
+* Apollo Client
+* React
+* GraphQl
+* TailwindCSS
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/93915846/172046375-e9b6ac94-0a2b-46fb-aca7-3407a3374f50.png)
